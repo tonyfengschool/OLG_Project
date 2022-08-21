@@ -1,0 +1,1 @@
+This is the project prepared for OLG interview round 2. The project is about predicting credit risk rating.
