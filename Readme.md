@@ -34,9 +34,11 @@ Four sets of training data were obtained using 4 different methods to handle mis
 ## Feature Engineering
 
 In this section, for each of the four training datasets, the continuous features are standardized, followed by one-hot encoding the categorical variables and label encoding the outcome. The four training datasets were then each fitted with a simple `sklearn.tree.DecisionTreeClassifier` model, and evaluated with the validation dataset, treated with the same method as the corresponding training dataset. It turned out that the dataset  handled with regression imputation yielded the best f1 score, which is a popular measurement for multinomial classification. Note that f1 score measures both the precision and the recall:
-\[\text{F1 score} = 2 \times \frac{\mathrm{Precision} \times \mathrm{Recall}}{\mathrm{Precision} + \mathrm{Recall}} \,,\]
-where
-\[\mathrm{Precision} = \frac{\mathrm{TP}}{\mathrm{TP} + \mathrm{FP}} \,, \quad \text{and} \quad \mathrm{Recall} = \frac{\mathrm{TP}}{\mathrm{TP} + \mathrm{FN}} \,,\]
+<!-- \[\text{F1 score} = 2 \times \frac{\mathrm{Precision} \times \mathrm{Recall}}{\mathrm{Precision} + \mathrm{Recall}} \,,\] -->
+<!-- where -->
+<!-- \[\mathrm{Precision} = \frac{\mathrm{TP}}{\mathrm{TP} + \mathrm{FP}} \,, \quad \text{and} \quad \mathrm{Recall} = \frac{\mathrm{TP}}{\mathrm{TP} + \mathrm{FN}} \,,\] -->
+![f1 score formula](./figures/math.png)
+
 with TP, TN, FP, FN representing the number of true positive, the number of true negative, and the number of false positive, and the number of false negative.
 
 Since regression imputation yielded the best results, the training, validation, and testing dataset treated with this method as well as the mentioned standardization and encoding, were saved as the final cleaned datasets ready for use in the model fitting section.
