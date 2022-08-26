@@ -1,5 +1,7 @@
 This is the project prepared for OLG interview round 2. 
 
+**[Please click this link to watch the presentation video](https://youtu.be/3FJtVT7C0gQ)**.
+
 ## Introduction
 
 The project is about predicting credit risk rating using machine learning algorithms with client data provided, including 118 continuous variables and a few categorical variables such as Country Code and Period. The original data provided is stored in `/data/raw/df_client.csv`. The task has been divided into 5 parts:
